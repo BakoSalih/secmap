@@ -48,7 +48,7 @@
 <main>
   <h1>Svelte & TanStack Table</h1>
   {#if isLoading}
-    <p>Loading data from backend...</p>
+    <p>Loading data from backend now...</p>
   {:else if users.length}
     <DataTable data={users} {columns} />
   {:else}
