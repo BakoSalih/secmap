@@ -34,7 +34,7 @@
 
   onMount(async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/users');
+      const response = await fetch('/api/users');
       if (!response.ok) throw new Error('Network response was not ok');
       users = await response.json();
     } catch (error) {
@@ -55,4 +55,3 @@
     <p>No user data found or failed to load.</p>
   {/if}
 </main>
-

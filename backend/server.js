@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 
 const app = express();
-const port = 3001;
+//const port = 3001;
 
 // Allow requests from our frontend development server
 app.use(cors({ origin: 'http://localhost:5173' }));
@@ -20,7 +20,8 @@ app.get('/api/users', (req, res) => {
     res.json(users);
 });
 
-app.listen(port, () => {
+/* app.listen(port, () => {
     console.log(`✅ Backend server running at http://localhost:${port}`);
 });
-
+ */
+export default app;
